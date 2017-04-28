@@ -1,0 +1,34 @@
+{
+  "defaultState":"alarmDisarmed_AllUnlocked",
+  "turningAlarmState":"alarmArmed_AllLocked",
+  "StateTransitions":[
+  {
+    "start_State":"alarmDisarmed_AllLocked",
+    "action_Lock":"alarmDisarmed_AllLocked",
+    "action_Lock_x_2":"alarmArmed_AllLocked",
+    "action_Unlock":"alarmDisarmed_driverUnlocked",
+    "action_Unlock_x_2":"alarmDisarmed_AllUnlocked"
+  },
+  {
+    "start_State":"alarmArmed_AllLocked",
+    "action_Lock":"alarmArmed_AllLocked",
+    "action_Lock_x_2":"alarmArmed_AllLocked",
+    "action_Unlock":"alarmDisarmed_driverUnlocked",
+    "action_Unlock_x_2":"alarmDisarmed_AllUnlocked"
+  },
+  {
+    "start_State":"alarmDisarmed_AllUnlocked",
+    "action_Lock":"alarmDisarmed_AllLocked",
+    "action_Lock_x_2":"alarmArmed_AllLocked",
+    "action_Unlock":"alarmDisarmed_AllUnlocked",
+    "action_Unlock_x_2":"alarmDisarmed_AllUnlocked"
+  },
+  {
+    "start_State":"alarmDisarmed_driverUnlocked",
+    "action_Lock":"alarmDisarmed_AllLocked",
+    "action_Lock_x_2":"alarmArmed_AllLocked",
+    "action_Unlock":"alarmDisarmed_driverUnlocked",
+    "action_Unlock_x_2":"alarmDisarmed_driverUnlocked"
+  }
+  ]
+}

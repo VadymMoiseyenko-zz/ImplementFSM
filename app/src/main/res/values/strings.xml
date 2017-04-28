@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ImplementFSM</string>
+
+    <string name="alarm_armed">ARMED</string>
+    <string name="alarmDisarmed">DISARMED</string>
+
+    <string name="lock_x_2">LOCK x 2</string>
+    <string name="unlock">UNLOCK</string>
+    <string name="lock">LOCK</string>
+    <string name="unlock_x_2">UNLOCK x 2</string>
+
+</resources>
